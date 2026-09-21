@@ -1,0 +1,2 @@
+[console_scripts]
+uca-rag = uca_rag.cli:main

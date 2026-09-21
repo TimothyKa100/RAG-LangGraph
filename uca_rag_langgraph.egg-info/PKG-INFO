@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: uca-rag-langgraph
+Version: 0.1.0
+Summary: Two-step hybrid RAG pipeline for STPA unsafe control action generation
+Requires-Python: >=3.11
+Requires-Dist: langgraph>=0.2.0
+Requires-Dist: langchain-core>=0.3.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: openpyxl>=3.1.0
+Provides-Extra: retrieval
+Requires-Dist: rank-bm25>=0.2.2; extra == "retrieval"
+Requires-Dist: sentence-transformers>=3.0.0; extra == "retrieval"
+Requires-Dist: ddgs>=9.0.0; extra == "retrieval"
+Requires-Dist: requests>=2.32.0; extra == "retrieval"
+Requires-Dist: beautifulsoup4>=4.12.0; extra == "retrieval"
+Requires-Dist: langchain-text-splitters>=0.3.0; extra == "retrieval"
+Provides-Extra: llm
+Requires-Dist: langchain-google-genai>=2.0.0; extra == "llm"
+Provides-Extra: api
+Requires-Dist: fastapi>=0.115.0; extra == "api"
+Requires-Dist: uvicorn[standard]>=0.30.0; extra == "api"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24.0; extra == "dev"
